@@ -38,28 +38,12 @@ Animações suaves
 Interface intuitiva
 Componentes reutilizáveis
 Design responsivo
-📁 Estrutura do Projeto
 
-src/
-  ├── components/
-  │   ├── Header/
-  │   ├── PostsList/
-  │   └── SearchList/
-  ├── contexts/
-  │   └── auth.js
-  ├── pages/
-  │   ├── Home/
-  │   ├── Login/
-  │   ├── NewPost/
-  │   ├── PostsUser/
-  │   ├── Profile/
-  │   └── Search/
-  └── routes/
 🔧 Instalação
 Clone o repositório
 BASH
 
-git clone https://github.com/seu-usuario/devpost.git
+git clone https://github.com/fabiosena1436/DevPost
 Instale as dependências
 BASH
 
