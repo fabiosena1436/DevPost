@@ -1,6 +1,8 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply plugin: 'com.google.gms.google-services'
+
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -78,12 +80,19 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.appdevpost"
-    defaultConfig {
+     defaultConfig {
         applicationId "com.appdevpost"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+     sourceSets {
+        main {
+            assets.srcDirs += 'src/main/assets'
+        }
     }
     signingConfigs {
         debug {
@@ -117,3 +126,9 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+
+project.ext.vectoricons = [
+    iconFontNames: ['AntDesign.ttf', 'Feather.ttf', 'Ionicons.ttf', 'Entypo.ttf', 'MaterialCommuinityIcons.ttf']
+]
+
